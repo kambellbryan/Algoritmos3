@@ -11,13 +11,13 @@ public class array {
 
             int[] array = new int[tam];
 
-            System.out.println("Ingrese los elementos del arreglo:");
+            System.out.println("Ingrese los elementos del arreglo: ");
 
             for (int i = 0; i < tam; i++) {
                 array[i] = teclado.nextInt();
             }
 
-            System.out.println("Los elementos del arreglo son:");
+            System.out.println("Los elementos del arreglo son: ");
 
             for (int i = 0; i < tam; i++) {
                 System.out.print(array[i] + " ");
