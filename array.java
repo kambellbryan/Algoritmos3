@@ -3,25 +3,19 @@ import java.util.Scanner;
 public class array {
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
 
-        try (Scanner teclado = new Scanner(System.in)) {
+        System.out.println("Enter " + size + " elements:");
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
 
-            System.out.print("Ingrese el tamaño del arreglo: ");
-            int tam = teclado.nextInt();
-
-            int[] array = new int[tam];
-
-            System.out.println("Ingrese los elementos del arreglo: ");
-
-            for (int i = 0; i < tam; i++) {
-                array[i] = teclado.nextInt();
-            }
-
-            System.out.println("Los elementos del arreglo son: ");
-
-            for (int i = 0; i < tam; i++) {
-                System.out.print(array[i] + " ");
-            }
+        System.out.println("The elements in the array are:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i] + " ");
         }
     }
 }
